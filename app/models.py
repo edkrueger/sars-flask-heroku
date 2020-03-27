@@ -21,7 +21,7 @@ class Record(Base, DictMixIn):
 
     id = Column(Integer, primary_key=True, index=True)
     date = Column(Date)
-    country = Column(String, index=True)
+    country = Column(String(255), index=True)
     cases = Column(Integer)
     deaths = Column(Integer)
     recoveries = Column(Integer)
